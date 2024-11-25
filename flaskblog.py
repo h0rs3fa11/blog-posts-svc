@@ -31,13 +31,8 @@ def about():
     print("goodbye")
     return render_template('about.html', title='About')
 
-@app.route("/add-post", methods=["POST"])
-def add_post():
-    request_data = request.get_json()
-    print(request_data)
-    return request_data["author"]
 
-@app.route("/register", methods=['GET', 'POST'])
+@app.route("/register", methods=["POST", "GET"])
 def register():
     form = RegistrationForm()
     if form.validate_on_submit():
