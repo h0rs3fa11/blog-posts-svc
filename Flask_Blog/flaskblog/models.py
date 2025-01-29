@@ -22,3 +22,4 @@ class Post(db.Model):
 
     def __reor__(self): 
             return f"Post('{self.title}', '{self.date.posted}',)"
+    
