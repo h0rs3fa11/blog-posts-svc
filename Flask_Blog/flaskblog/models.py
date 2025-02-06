@@ -20,6 +20,6 @@ class Post(db.Model):
     content = db.Column(db.Text, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
 
-    def __reor__(self): 
+    def __repr__(self): 
             return f"Post('{self.title}', '{self.date.posted}',)"
     
