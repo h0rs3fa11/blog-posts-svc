@@ -2,13 +2,13 @@
 name = "blog-posts-svc"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Q Ma",email = "corrie.ma@protonmail.com"}
-]
+authors = []
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.13"
 dependencies = [
-    "blinker (==1.8.2)"
+    "flask (>=3.1.0,<4.0.0)",
+    "flask-sqlalchemy (>=3.1.1,<4.0.0)",
+    "flask-wtf (>=1.2.2,<2.0.0)"
 ]
 
 
