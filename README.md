@@ -1,5 +1,6 @@
 A full-featured blog web app using Flask Framework
 
 ```
-pip install -r requirements.txt
+poetry install --no-root
+poetry run python flaskblog.py
 ```
